@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.h100 {
+  height: 100%;
+}
+
+body, html {
+  background-color: #0a0a0a;
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+p {
+  padding: 2px 0;
+}
+
+.container {
+  position: relative;
+}
+
+.test {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.contact-container,
+.orbiter-svg circle {
+  transition: 500ms ease-out;
+}
+
+/*.orbiter-svg circle.circle-first-disappear {*/
+/*  animation-name: circleFirstDisappear;*/
+/*  animation-timing-function: linear;*/
+/*  animation-duration: 500ms;*/
+/*  transform-origin: bottom center;*/
+/*  transform-box: fill-box;*/
+/*}*/
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.orbiter-svg circle.appear {
+    animation-name: animate-opacity;
+    animation-timing-function: ease-out;
+    animation-duration: 500ms;
+}
+
+.orbiter-svg circle.disappear {
+  animation-name: animate-opacity;
+  animation-timing-function: ease-out;
+  animation-duration: 500ms;
+  animation-direction: reverse;
+}
+
+@keyframes animate-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact-img-container {
+  border-radius: 100%;
+  border: 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
+  width: 60px;
+  height: 60px;
+}
+
+.contact-img {
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+}
+
+.contact-card {
+  opacity: 0;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: 200ms ease-out;
+  background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
+}
+
+.activity-container {
+
+}
+
+.activity-header {
+  background-color: rgb(20, 20, 20);
+  position: relative;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.activity-contact-name {
+  font-size: 16px;
+}
+
+.activity-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.activity-contact-mutual {
+  margin-top: 3px;
+  align-items: center;
+}
+
+.activity-contact-mutual p {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.activity-info {
+  padding: 0 10px;
+  width: 320px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.activity-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.activity-message-time {
+  justify-content: space-between;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.activity-content-header {
+  padding: 15px;
+}
+.activity-content-header i {
+  position: relative;
+  top: 1px;
+  margin-right: 10px;
+}
+
+.activity-message-container {
+  background-color: rgb(20,20,20);
+}
+
+.activity-message-time {
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.contact-item {
+  width: 60px;
+  height: 60px;
+}
+
+.contact-container:hover {
+  width: 500px;
+  height: 500px;
+}
+
+.contact-container:hover .contact-card {
+  opacity: 1;
+}
+
+.activity-content {
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(44,44,44);
+}
+.text-gray {
+  color: rgba(146, 146, 146, 1);
+}
+
+.activity-message-body {
+  background: rgb(20,20,20);
+  padding: 10px 15px;
+}
+
+.activity-container {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+.btn {
+  cursor: pointer;
+}
+
+.btn-expand {
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-expand:hover {
+  color: #ccc
+}
+
+.overflow-ellipsis {
+  max-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.icon-caret img {
+  position: relative;
+  left: 2px;
+  top: -1px;
+  transition: 250ms;
+}
+
+.icon-caret.icon-rotate-180 img {
+  transform: rotate(180deg);
+}
